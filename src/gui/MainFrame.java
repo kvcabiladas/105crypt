@@ -181,7 +181,7 @@ public class MainFrame extends JFrame {
                 BorderFactory.createEtchedBorder(), " Key Settings & Dedicated Cipher Tools ",
                 TitledBorder.LEFT, TitledBorder.TOP, new Font("SansSerif", Font.BOLD, 13)));
 
-        // --- Card 1: Caesar Panel ---
+        // 1 Caesar Panel
         JPanel caesarPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 12, 6));
         JLabel caesarLabel = new JLabel("Shift Amount (1 - 25):");
         // caesarSlider = new JSlider(JSlider.HORIZONTAL, 1, 25, 3);
@@ -208,7 +208,7 @@ public class MainFrame extends JFrame {
         caesarPanel.add(caesarSpinner);
         caesarPanel.add(crackCaesarButton);
 
-        // --- Card 2: Vigenère Panel ---
+        // 2 Vigenere Panel
         JPanel vigenerePanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 12, 6));
         JLabel vigenereLabel = new JLabel("Keyword / Keyphrase:");
         vigenereKeyField = new JTextField(15);
@@ -220,11 +220,10 @@ public class MainFrame extends JFrame {
         vigenerePanel.add(vigenereKeyField);
         vigenerePanel.add(vigTip);
 
-        // --- Card 3: Atbash (Empty placeholder as panel hides when Atbash is selected)
-        // ---
+        // 3 Atbash Panel
         JPanel atbashPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 12, 6));
 
-        // --- Card 4: Rail Fence Panel ---
+        // 4 Rail Fence Panel
         JPanel railFencePanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 12, 6));
         JLabel railFenceLabel = new JLabel("Number of Rails (Rows):");
         railFenceSpinner = new JSpinner(new SpinnerNumberModel(3, 2, 20, 1));
@@ -244,7 +243,7 @@ public class MainFrame extends JFrame {
         railFencePanel.add(railFenceSpinner);
         railFencePanel.add(railFenceVisualizerButton);
 
-        // --- Card 5: Playfair Panel ---
+        // 5 Playfair Panel
         JPanel playfairPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 12, 6));
         JLabel playfairLabel = new JLabel("Keyword / Passphrase:");
         playfairKeyField = new JTextField(15);
